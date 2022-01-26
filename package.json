@@ -18,7 +18,8 @@
     "prettier": "prettier --config .prettierrc 'src/*.{ts,tsx}' --check",
     "prettier:fix": "prettier --config .prettierrc 'src/*.{ts,tsx}' --write",
     "generate": "plop --plopfile generators/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "husky": "^7.0.4",
@@ -27,6 +28,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.16.7",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -68,11 +70,6 @@
       "npm run prettier:fix",
       "npm run lint",
       "npm run test"
-    ]
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "<rootDir>/jest-setup.ts"
     ]
   }
 }
