@@ -6,7 +6,8 @@
     "extends": [
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "airbnb"
+        "airbnb",
+        "plugin:testing-library/react"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -19,7 +20,9 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "react-hooks"
+        "react-hooks",
+        "testing-library",
+        "jest"
     ],
     "rules": {
         "no-use-before-define": "off",
@@ -51,7 +54,16 @@
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "import/prefer-default-export": "off",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "**/*.test.ts",
+                    "**/*.test.tsx"
+                ]
+            }
+        ]
     },
     "settings": {
         "import/resolver": {
