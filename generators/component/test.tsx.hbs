@@ -1,0 +1,16 @@
+
+import React from 'react';
+import { render } from '@testing-library/react';
+
+import {{ properCase name }} from '../index';
+
+describe('<{{ properCase name }} />', () => {
+  
+  test('renders', () => {
+    render(<{{properCase name}} />);
+  });
+
+  test('should render correctly', () => {
+    expect({{ properCase name }}Component).toMatchSnapshot();
+  });
+});

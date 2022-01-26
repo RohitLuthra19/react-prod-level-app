@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+    "christian-kohler.npm-intellisense",
+    "esbenp.prettier-vscode",
+    "SonarSource.sonarlint-vscode",
+    "wix.vscode-import-cost",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "wmaurer.change-case",
+    "christian-kohler.path-intellisense",
+    "Orta.vscode-jest",
+    "shinnn.stylelint"
+  ]
+}
