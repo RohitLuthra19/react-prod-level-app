@@ -1,14 +1,14 @@
 import * as React from 'react';
-import './App.css';
+import styles from './App.scss';
+import Button from './components/Button';
 
 type AppProps = {
   message?: string;
 };
-
 function App({ message }: AppProps) {
   return (
-    <div className="class1" data-testid={message}>
-      {message}
+    <div className={styles.class1} data-testid={message}>
+      <Button>Submit</Button>
     </div>
   );
 }
